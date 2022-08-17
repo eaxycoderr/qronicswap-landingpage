@@ -1,0 +1,156 @@
+.roadmap {
+    position: relative;
+    z-index: 20;
+    margin-top: 96px;
+}
+
+.inRoadmap {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.inRoadmap .title h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 876px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inRoadmap .title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 971px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.roadmapContent {
+    margin-top: 96px;
+    display: flex;
+}
+
+.roadmapContent .left, .roadmapContent .right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.roadmapContent .roadmapStage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFFFFF;
+    min-height: 350px;
+    /* border: 1px solid red; */
+}
+.roadmapContent .roadmapStage img{
+    height: 280px;
+}
+.roadmapContent .roadmapStage .stageText {
+    padding-top: 100px;
+}
+
+.roadmapContent .roadmapStage.stage2, 
+.roadmapContent .roadmapStage.stage4 {
+    align-items: initial;
+    padding-left: 250px;
+    width: 100%;
+}
+
+.roadmapContent .roadmapStage.stage2 .stageText, 
+.roadmapContent .roadmapStage.stage4 .stageText {
+    padding-top: 0;
+}
+
+.roadmapContent .roadmapStage .stageText span {
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.roadmapContent .roadmapStage .stageText .road_list {
+    margin-top: 9px;
+}
+
+.roadmapContent .roadmapStage .stageText li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    list-style-type: inherit;
+}
+
+
+.bGCLayer7 {
+    position: absolute;
+    top: -30%;
+    right: -53%;
+}
+
+.bGCLayer8 {
+    position: absolute;
+    top: -20%;
+    left: -53%;
+}
+
+@media screen and (max-width: 1024px) {
+    .roadmapContent {
+        flex-direction: column;
+    }
+    .roadmapContent .roadmapStage {
+        align-items: center;
+    }
+    .roadmapContent .roadmapStage.stage2 .stageText {
+        padding-top: 100px;
+    }
+    .roadmapContent .roadmapStage.stage4 .stageText {
+        padding-top: 50px;
+    }
+    
+    
+    .roadmapContent .roadmapStage .stageText {
+        padding: 0;
+    }
+    .roadmapContent .left, .roadmapContent .right {
+        flex-direction: column-reverse;
+    }
+
+    .roadmapContent .roadmapStage.stage2, .roadmapContent .roadmapStage.stage4 {
+        padding: 0;
+    }
+    .roadmapContent .roadmapStage.stage1 img, 
+    .roadmapContent .roadmapStage.stage3 img {
+        transform: rotateX(180deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inRoadmap .title p{
+        font-size: 18px;
+    }
+}

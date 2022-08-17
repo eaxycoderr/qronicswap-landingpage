@@ -1,0 +1,179 @@
+.banner {
+    /* border: 1px solid red; */
+    max-width: 1280px;
+    width: 100%;
+    min-height: 264px;
+    margin: auto;
+    margin-top: 96px;
+    position: relative;
+}
+
+.banner .banner-content h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+.banner .banner-content p,
+.sectionFour .inSectionFour .title p,
+.sectionFive .title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 948px;
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.banner .banner-btns {
+    max-width: 347px;
+    margin: auto;
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    gap: 12px;
+}
+
+.banner .flex {
+    max-width: 1279px;
+    width: 100%;
+    margin: auto;
+    margin-top: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* padding-top: 41px; */
+    padding-bottom: 41px;
+}
+
+.banner .flex div {
+    width: 100%;
+    min-height: 136px;
+    border-radius: 12px;
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.banner .flex div h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.banner .flex div p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.banner .flex .flexBox1 {
+    width: 295px;
+}
+
+.banner .flex .flexBox2 {
+    width: 341px;
+}
+
+.banner .flex .flexBox3 {
+    width: 295px;
+}
+
+.banner .flex .flexBox4 {
+    width: 177px;
+}
+
+
+.bGCLayer {
+    position: absolute;
+    top: -55%;
+    right: -53%;
+}
+
+.bGCLayer2 {
+    position: absolute;
+    top: -42%;
+    left: -55%;
+}
+
+@media screen and (max-width: 767px) {
+    .banner .banner-content h1 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .banner {
+        margin-top: 64px;
+    }
+
+    .banner .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .banner .flex .flexBox1,
+    .banner .flex .flexBox2,
+    .banner .flex .flexBox3,
+    .banner .flex .flexBox4 {
+        width: 100%;
+        /* overflow-wrap: break-word; */
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .banner .flex .flexBox1 {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .banner .flex .flexBox4{
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .banner .banner-content p,
+    .sectionFour .inSectionFour .title p,
+    .sectionFive .title p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner .banner-btns {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .banner .banner-btns a {
+        width: 100%;
+    }
+}

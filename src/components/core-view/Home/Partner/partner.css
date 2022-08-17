@@ -1,0 +1,29 @@
+.partner {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.partner .inPartner {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.partner .inPartner h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.partner .inPartner .partnerList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}

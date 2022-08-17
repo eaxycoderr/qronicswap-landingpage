@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    border-bottom: 1px solid #F2F4F7;
+    position: relative;
+    z-index: 9999;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header .inHeader {
+    max-width: 1216px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .inHeader .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .inHeader .left .logo {
+    width: 142px;
+    height: 47.29px;
+}
+
+.header .inHeader .left .logo img {
+    width: 100%;
+}
+
+.header .inHeader .left .menu nav ul {
+    display: flex;
+    gap: 37px;
+}
+
+.header .inHeader .left .menu nav ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .inHeader .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.header .inHeader .right .walletBtn {
+    width: 175px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .icon {
+    color: white;
+    font-size: 34px;
+}
+
+.header .inHeader .left .menu .dropDown_menu {
+    position: absolute;
+    top: 53px;
+    left: -45px;
+    width: 186px;
+    /* min-height: 130px; */
+    background: linear-gradient(139.38deg, rgba(65, 70, 83, 0.4) 13.51%, rgba(56, 61, 74, 0.1) 86.74%);
+    box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    padding: 19px;
+}
+
+.header .inHeader .left .menu .dropDown_menu ul {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 0;
+    gap: 0px;
+}
+
+.header .inHeader .left .menu .dropDown_menu ul li a {
+    width: 138px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.header .inHeader .left .menu .dropDown_menu ul li a span {
+    /* width: 21px; */
+    /* min-height: 10px; */
+    background: #E31B1B;
+    border-radius: 1px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 7px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.header .inHeader .left .menu .dropDown_menu ul li a:hover {
+    background: linear-gradient(139.38deg, rgba(109, 118, 142, 0.4) 13.51%, rgba(109, 118, 142, 0.1) 86.74%);
+    box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2);
+    backdrop-filter: blur(40px);
+}
+
+@media screen and (max-width: 767px) {
+    .header .inHeader .left nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header .inHeader .right {
+        display: none;
+    }
+}
