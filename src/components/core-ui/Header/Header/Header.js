@@ -24,9 +24,12 @@ const Header = () => {
     >
       <div className="inHeader">
         <div className="left">
-          <div className="logo">
-            <img src={Logo} alt="Logo" />
-          </div>
+          <Link to="/">
+            <div className="logo">
+              <img src={Logo} alt="Logo" />
+            </div>
+          </Link>
+
           <div className="menu">
             <nav className={`navMenu ${menuActive ? "open" : ""}`}>
               <ul>
