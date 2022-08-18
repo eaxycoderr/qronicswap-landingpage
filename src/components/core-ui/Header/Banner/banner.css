@@ -123,6 +123,10 @@
     left: -55%;
 }
 
+.MobilePaternImg {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .banner .banner-content h1 {
         font-size: 32px;
@@ -136,6 +140,20 @@
     .banner .flex {
         flex-direction: column;
         gap: 0;
+        position: relative;
+    }
+
+    .MobileBGCLayer {
+        display: block;
+        position: absolute;
+        left: 16%;
+        filter: blur(127px);
+    }
+    .MobileBGCLayer2 {
+        display: block;
+        position: absolute;
+        left: -40%;
+        filter: blur(127px);
     }
 
     .banner .flex .flexBox1,
@@ -153,7 +171,7 @@
         border-top-right-radius: 12px;
     }
 
-    .banner .flex .flexBox4{
+    .banner .flex .flexBox4 {
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
     }
@@ -175,5 +193,9 @@
 
     .banner .banner-btns a {
         width: 100%;
+    }
+
+    .MobileBGCLayer {
+        left: -12%;
     }
 }

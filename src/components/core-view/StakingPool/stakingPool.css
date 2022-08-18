@@ -1,0 +1,9 @@
+.farmingStaking .inFarmingStakingTitle.stakingTitle button.farmsTitleBtn {
+    background: linear-gradient(95.08deg, #FFFFFF 6.71%, #FFFFFF 111.09%);
+    color: #364073;
+}
+
+.farmingStaking .inFarmingStakingTitle.stakingTitle button.stakeTitleBtn {
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    color: #FFFFFF;
+}

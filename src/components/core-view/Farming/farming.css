@@ -1,0 +1,441 @@
+.farmingStaking {
+    background: #11001F;
+    backdrop-filter: blur(224px);
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 141px;
+    border: 1px solid #11001F;
+}
+
+.farmingStaking .inFarmingStaking {
+    max-width: 1216px;
+    width: 100%;
+    margin: auto;
+}
+
+.farmingStaking .inFarmingStakingTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.farmingStaking .inFarmingStakingTitle button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    width: 49px;
+    height: 24px;
+    border-radius: 16px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.farmingStaking .inFarmingStakingTitle.farmsTitle button.farmsTitleBtn {
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    color: #FFFFFF;
+}
+
+.farmingStaking .inFarmingStakingTitle.farmsTitle button.stakeTitleBtn {
+    background: linear-gradient(95.08deg, #FFFFFF 6.71%, #FFFFFF 111.09%);
+    color: #364073;
+}
+
+.farmingStaking .fSbanner {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+    padding: 20px;
+}
+
+.farmingStaking .fSbanner h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.farmingStaking .fSbanner p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.farmingStaking .fSbanner .qronicLogo {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.farmingStaking .fSbanner .qronicLogo img {
+    width: 100px;
+}
+
+.farmingStaking .searchFilter {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.farmingStaking .searchFilter .icon {
+    color: #4F4F4F;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.farmingStaking .searchFilter .inputField {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.farmingStaking .searchFilter .inputField input {
+    border-radius: 8px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #4F4F4F;
+    width: 300px;
+    padding-left: 42px;
+}
+
+.farmingStaking .searchFilter .inputField input.selectInput {
+    width: 181px;
+    padding: 16px;
+    padding-right: 42px;
+}
+
+.farmingStaking .searchFilter .inputField .arrowDownIcon {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+/* check box styling */
+/* The checkBox */
+.farmingStaking .searchFilter .inputCheckBox {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    gap: 4px;
+    position: relative;
+    top: 8px;
+}
+
+.farmingStaking .searchFilter .inputCheckBox p {
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+.checkBox {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: linear-gradient(95.08deg, #9F2DFE 6.71%, #3BB2F9 111.09%);
+    border-radius: 5px;
+}
+
+.inputBox label {
+    width: 24px;
+    height: 26px;
+}
+
+/* Hide the browser's default checkbox */
+.checkBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 2.9px;
+    width: 20px;
+    height: 20px;
+    background-color: #11001F;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBox:hover input~.checkmark {
+    background-color: #11001F;
+}
+
+/* When the checkbox is checked, add a 11001F background */
+.checkBox input:checked~.checkmark {
+    background-color: #11001F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkBox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.farmingStaking .farmsStakingContainer {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 8px;
+    background-color: #FDFDFD;
+    padding: 12px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 1px;
+}
+
+.farmingStaking .farmsStakingContainer:first-child {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.farmingStaking .farmsStakingContainer:last-child {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.farmsStakingContainer .farmsStakingCLeft {
+    width: 263px;
+    display: flex;
+    gap: 8px;
+}
+
+.farmsStakingContainer .farmsStakingCLeft .imgBox {
+    width: 45px;
+    height: 50.18px;
+}
+
+.farmsStakingContainer .farmsStakingCLeft .imgBox .bigFarmLogo {
+    position: relative;
+    top: -15px;
+    left: 5px;
+}
+
+.farmsStakingContainer .farmsStakingCLeft .farmNameDetails {
+    padding-top: 3px;
+}
+
+.farmsStakingContainer .farmsStakingCLeft .farmNameDetails span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #333333;
+    margin: 0;
+}
+
+.farmsStakingContainer .farmsStakingCLeft .farmNameDetails p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #4F4F4F;
+    margin: 0;
+    margin-top: 4px;
+}
+
+.farmsStakingContainer .farmsStakingCRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.farmsStakingContainer .farmsStakingCRight div {
+    width: 100%;
+}
+
+.farmsStakingContainer .flexBox2 span,
+.farmsStakingContainer .flexBox3 span,
+.farmsStakingContainer .flexBox4 span,
+.farmsStakingContainer .flexBox5 span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.farmsStakingContainer .flexBox2 p,
+.farmsStakingContainer .flexBox3 p,
+.farmsStakingContainer .flexBox4 p,
+.farmsStakingContainer .flexBox5 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    margin: 0;
+    margin-top: 4px;
+    color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+    .farmingStaking {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .farmingStaking .fSbanner{
+        gap: 16px;
+    }
+    .farmingStaking .fSbanner .qronicLogo {
+        display: none;
+    }
+
+    .farmingStaking .fSbanner h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .farmingStaking .fSbanner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .farmingStaking .searchFilter .inputField input {
+        width: 131px;
+    }
+
+    .farmingStaking .searchFilter .inputField input.selectInput {
+        width: 98px;
+    }
+
+    .farmingStaking .fSbanner {
+        min-height: 192px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .farmingStaking .searchFilter {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .farmsStakingContainer .farmsStakingCRight {
+        flex-wrap: wrap;
+    }
+
+    .farmsStakingContainer .flexBox2 {
+        width: 55px;
+    }
+
+    .farmsStakingContainer .flexBox3 {
+        width: 60px;
+    }
+
+    .farmsStakingContainer .flexBox4 {
+        width: 118px;
+    }
+
+    .farmsStakingContainer .flexBox5 {
+        width: 73px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .farmingStaking .farmsStakingContainer {
+        flex-direction: column;
+    }
+}

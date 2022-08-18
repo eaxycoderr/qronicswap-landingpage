@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bGCLayer from "../../../../assets/overlay-fx1.png";
 import bGCLayer2 from "../../../../assets/overlay-fx2.png";
+import MobileBGCLayer from "../../../../assets/mobile-background-overlay-fx.png";
+import MobileBGCLayer2 from "../../../../assets/mobile-background2-overlay-fx.png";
 
 import "./banner.css";
 
 const Banner = () => {
   return (
     <div className="banner">
+      <img className="MobileBGCLayer MobilePaternImg" src={MobileBGCLayer} alt="MobileBGCLayer" />
       <div className="banner-content">
         <h1>Next level digital marketplace to trade your favorite assets.</h1>
         <p>
@@ -26,6 +29,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="flex">
+        <img className="MobileBGCLayer2 MobilePaternImg" src={MobileBGCLayer2} alt="MobileBGCLayer" />
         <div className="flexBox1">
           <h3>$113,139,093</h3>
           <p>Total Value Locked</p>
@@ -43,8 +47,8 @@ const Banner = () => {
           <p>Price</p>
         </div>
       </div>
-      <img className="bGCLayer paternImg" src={bGCLayer} alt="" />
-        <img className="bGCLayer2 paternImg" src={bGCLayer2} alt="" />
+      <img className="bGCLayer paternImg" src={bGCLayer} alt="bGCLayer" />
+      <img className="bGCLayer2 paternImg" src={bGCLayer2} alt="bGCLayer2" />
     </div>
   );
 };

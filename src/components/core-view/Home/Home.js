@@ -27,6 +27,8 @@ import "./home.css";
 import Roadmap from "./Roadmap/Roadmap";
 import Partner from "./Partner/Partner";
 import LastSection from "./LasetSection/LastSection";
+import MobileBGCLayer from "../../../assets/mobile-background2-overlay-fx.png";
+import MobileBGCLayer2 from "../../../assets/mobile-background-overlay-fx.png";
 
 const Home = () => {
   return (
@@ -36,6 +38,11 @@ const Home = () => {
 
         <div className="sectionTwo">
           <h2>Top movers</h2>
+          <img
+            className="MobileBGCLayer3 MobilePaternImg"
+            src={MobileBGCLayer}
+            alt="MobileBGCLayer"
+          />
           <div className="inSectionTwo">
             <div className="chartBox">
               <div className="top">
@@ -137,6 +144,11 @@ const Home = () => {
         </div>
 
         <div className="sectionThree">
+          <img
+            className="MobileBGCLayer4 MobilePaternImg"
+            src={MobileBGCLayer2}
+            alt="MobileBGCLayer"
+          />
           <div className="inSectionThree">
             <div className="title">
               <img src={Feactureimg} alt="Feactureimg" />
@@ -173,6 +185,11 @@ const Home = () => {
         </div>
 
         <div className="sectionFour">
+          <img
+            className="MobileBGCLayer5 MobilePaternImg"
+            src={MobileBGCLayer2}
+            alt="MobileBGCLayer"
+          />
           <div className="inSectionFour">
             <div className="title">
               <h2>Take Your Crypto Trading To The NEXT LEVEL!</h2>
@@ -202,6 +219,11 @@ const Home = () => {
                 <p>Trade highly liquid assets. Convert to fiat instantly.</p>
               </div>
               <div>
+                <img
+                  className="MobileBGCLayer6 MobilePaternImg"
+                  src={MobileBGCLayer2}
+                  alt="MobileBGCLayer"
+                />
                 <img src={S4img4} alt="S4img4" />
                 <h3>Secure crypto trading</h3>
                 <p>Qroni Swap applies top-security protocols and audits.</p>
@@ -216,11 +238,16 @@ const Home = () => {
               </div>
               <div>
                 <img src={S4img6} alt="S4img6" />
-                <h3>Lorem Ipsum dolor</h3>
+                <h3>NFT staking</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  pharetra, ac morbi blandit ipsum massa.
+                  Stake your NFTs and idle NFT tickets, and earn passive income
+                  as you navigate Qroniswap.
                 </p>
+                <img
+                  className="MobileBGCLayer7 MobilePaternImg"
+                  src={MobileBGCLayer}
+                  alt="MobileBGCLayer"
+                />
               </div>
             </div>
           </div>
